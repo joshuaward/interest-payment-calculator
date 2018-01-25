@@ -1,6 +1,5 @@
 const simpleInterest = document.querySelector('.simple-interest');
 const button = document.querySelector('.button');
-const loading = document.querySelector('.loader');
 const results = document.querySelector('.results');
 
 function calculateResults(e) {
@@ -28,14 +27,14 @@ function calculateResults(e) {
 		monthlyPayment.innerHTML = '$' + payment;
 		totalAmount.innerHTML = '$' + total;
 		// hide loader
-		loading.classList.add('hide');
+		button.classList.remove('loading');
 		// show results
 		results.classList.remove('hide');
 	} else {
 		// show error
 		showError('Please check your numbers and try again.');
 		// hide loader
-		loading.classList.add('hide');
+		button.classList.remove('loading');
 	}
 }
 
@@ -59,10 +58,10 @@ function clearError() {
 button.addEventListener('click', (e) => {
 	console.log('Calculating...');
 	// show loader
-	loading.classList.remove('hide');
+	button.classList.add('loading');
 
 	// set timeout
-	setTimeout(calculateResults, 4000);
+	setTimeout(calculateResults, 2000);
 
 	// prevent page from reloading on submit
 	e.preventDefault();
