@@ -35,7 +35,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	background-image: url('https://static.pexels.com/photos/251287/pexels-photo-251287.png');
+	background-image: url('../images/benjamin.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -64,6 +64,8 @@ body {
 		margin: 0 0 1.875rem;
 		padding: 0 0 0.9375rem;
 		border-bottom: 0.0625rem solid #ddd;
+		font-size: 1.25rem;
+		font-weight: bold;
 		text-align: center;
 	}
 	
@@ -257,34 +259,6 @@ body {
 					margin: 0;
 					background-color: white;
 					font-weight: 600;
-				}
-			}
-		}
-		
-		#result {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			height: 3.375rem;
-			margin: 1.25rem 0 0;
-		}
-
-		#monthly-payment {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-			height: 3.375rem;
-			margin: 0;
-
-			span {
-				font-weight: bold;
-
-				&:last-child {
-					font-size: 2.25rem;
 				}
 			}
 		}
