@@ -1,7 +1,5 @@
 @import 'vendor/_reset';
 
-$base-duration: 500ms;
-
 // Colors
 $color-1: slategray;
 $color-2: #3498db;
@@ -41,10 +39,6 @@ body {
 	background-size: cover;
 }
 
-.hide {
-	display: none;
-}
-
 .simple-interest {
 	position: relative;
 	display: flex;
@@ -56,10 +50,6 @@ body {
 	border-radius: 0.3125rem;
 	box-shadow: 0 0 1.875rem rgba(black,0.3);
 	
-	&:hover, &:active {
-		cursor: grab;
-	}
-
 	h2 {
 		margin: 0 0 1.875rem;
 		padding: 0 0 0.9375rem;
@@ -104,16 +94,7 @@ body {
 			margin: 0 0 0.625rem;
 			background: white;
 			border: 0.0625rem solid $color-1;
-			//border-radius: 0.3125rem;
-			overflow: hidden;
-			
-			&.rate {
-				
-				> span.percent {
-					line-height: 1 !important;
-				}
-			}
-			
+						
 			> span {
 				position: relative;
 				display: flex;
@@ -121,9 +102,9 @@ body {
 				justify-content: center;
 				width: 15%;
 				padding: 0.625rem 0.3125rem;
-				//border-radius: 0.3125rem 0 0 0.3125rem;
 				background-color: $color-1;
-				color: white;				
+				color: white;		
+				font-weight: bold;		
 			}
 			
 			input {
@@ -136,13 +117,6 @@ body {
 				border: none;
 				font-size: 0.75rem;
 				font-weight: 300;
-				
-				&::placeholder {
-					
-					.errors {
-						color: $error;
-					}
-				}
 			}
 		}
 		
@@ -155,7 +129,6 @@ body {
 			background-color: lighten($color-1,10%);
 			border: none;
 			border-radius: 0.3125rem;
-			//box-shadow: 0 0 1.25rem rgba(black,0.2);
 			color: white;
 			font-size: 0.75rem;
 			font-weight: 300;
